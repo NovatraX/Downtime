@@ -1,76 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novatra - Maintenance</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            color: #007BFF;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1rem;
-            margin: 10px 0;
-        }
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 6px solid #ddd;
-            border-top-color: #007BFF;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
-        }
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scheduled Maintenance</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e90ff, #00bfff);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+    }
+
+    p {
+      font-size: 1.3em;
+      max-width: 600px;
+      margin-bottom: 1em;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #ffeb3b;
+    }
+
+    .coming-back {
+      background-color: white;
+      color: #1e90ff;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border-radius: 5px;
+      text-transform: uppercase;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      animation: pulse 1.5s infinite;
+      margin-bottom: 1.5em;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .timer {
+      font-size: 1.8em;
+      margin-bottom: 1.5em;
+      font-weight: bold;
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .link-btn {
+      background-color: white;
+      color: #1e90ff;
+      padding: 12px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .link-btn:hover {
+      background-color: #ffeb3b;
+      color: #003366;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>We'll Be Back Soon!</h1>
-        <p>Our website is currently down. Check our <a href="https://www.reddit.com/r/Novatra/comments/1lq290i/update_site_down_due_to_financial_issues_working/">Reddit post</a> for more info.</p>
-        <div class="spinner"></div>
-        <p>We apologize for any inconvenience. Please check back later.</p>
-        <div class="contact-info">
-            <p>Join our <a href="https://discord.gg/YJnMFRVzDq">discord server</a> for more updates.</p>
-        </div>
-    </div>
+  <h1>🚧 Scheduled Maintenance in Progress 🚧</h1>
+  <p>
+    We're upgrading our infrastructure to bring you a smoother, faster experience.<br />
+    <span class="highlight">No downtime. No errors. Just excellence.</span>
+  </p>
+
+  <div class="coming-back">Back Online: By 6 July</div>
+
+  <div class="links">
+    <a href="https://www.reddit.com/r/Novatra/comments/1lroe6c/scheduled_maintenance_well_be_back_stronger_on_6/" class="link-btn" target="_blank">📢 Reddit Announcement</a>
+    <a href="https://discord.gg/YJnMFRVzDq" class="link-btn" target="_blank">💬 Join Our Discord for More Updates</a>
+  </div>
 </body>
 </html>
